@@ -94,8 +94,8 @@ func run(ctx *cli.Context) error {
 
 func main() {
 	app := &cli.App{
-		Name:   "binance-trade-tail",
-		Usage:  "tail JSON crypto trade data from the binance streaming api",
+		Name:   "finnhub-trade-tail",
+		Usage:  "tail trade data from the finnhub streaming api",
 		Action: run,
 		Flags: []cli.Flag{
 			&cli.StringSliceFlag{
